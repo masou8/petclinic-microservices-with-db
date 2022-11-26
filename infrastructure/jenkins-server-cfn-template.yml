@@ -54,9 +54,9 @@ Resources:
     Type: AWS::EC2::Instance
     Properties:
       ImageId: ami-0947d2ba12ee1ff75
-      InstanceType: t3a.medium
+      InstanceType: t3.medium
       KeyName: !Ref KeyPairName
-      BlokDeviceMappings:
+      BlockDeviceMappings:
         - DeviceName: /dev/xvda
           Ebs: 
             VolumeType: gp2
